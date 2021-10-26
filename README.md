@@ -1,16 +1,5 @@
 # bbwrapper
-Crypto Currency Exchange Wrapper for Go.
-
-# Supporting exchanges
-- bitbank
-- bitflyer
-- bybit
-- coincheck
-- ftx
-- gmo
-- liquid
-- dummy
-  - for back test
+bybit Currency Exchange Wrapper for Go.
 
 # Usage
 ```
@@ -22,7 +11,7 @@ import (
 )
 
 func main() {
-	bfClient, _ := bbwrapper.Bitflyer(bbwrapper.ExchangeKey{
+	bfClient, _ := bbwrapper.New(bbwrapper.ExchangeKey{
 		APIKey:    "your_api_key",
 		APISecKey: "your_api_sec_key",
 	})
